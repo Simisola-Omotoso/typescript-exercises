@@ -25,3 +25,13 @@ function filterByEnrolled(student: Student): Student[] {
 function filterBySenior(student: Student): Student[] {
     return students.filter(student => student.status === "senior");
 }
+
+let extra: Student = {
+    id: 5,
+    name: "Mary",
+    grade: 13,
+    isEnrolled: false,
+    status: "senior",
+}
+
+extra.id = 6;
