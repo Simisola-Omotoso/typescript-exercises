@@ -34,4 +34,8 @@ let extra: Student = {
     status: "senior",
 }
 
-extra.id = 6;
+//extra.id = 6;
+
+function studentSummary(student: Student): string {
+    return `${student.name} ({$student.status}) - Enrolled?: {$student.isEnrolled}`;
+}
