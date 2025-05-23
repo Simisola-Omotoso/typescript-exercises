@@ -1,13 +1,14 @@
 type Student = {
-    id: number;
+    readonly id: number;
     name: string;
     grade: number;
     isEnrolled: boolean;
     status: "freshman" | "sophomore" | "junior" | "senior";
+    email?: string;
 };
 
 let students: Student[] = [
-    {id: 1, name: "Simisola", grade: 12, isEnrolled: true, status: "senior"},
+    {id: 1, name: "Simisola", grade: 12, isEnrolled: true, status: "senior", email: "somotoso@outlook.com"},
     {id: 2, name: "Isaac", grade: 11, isEnrolled: true, status: "junior"},
     {id: 3, name: "Oyinkansola", grade: 9, isEnrolled: false, status: "sophomore"},
 ]
